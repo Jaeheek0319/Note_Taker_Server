@@ -1,0 +1,26 @@
+{
+  "name": "note_taker_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaeheek0319/Note_Taker_Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jaeheek0319/Note_Taker_Server/issues"
+  },
+  "homepage": "https://github.com/Jaeheek0319/Note_Taker_Server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "uuid": "^8.3.2"
+  }
+}

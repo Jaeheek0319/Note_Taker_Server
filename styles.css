@@ -1,0 +1,17 @@
+.fullNote{
+    border:5px solid;
+    border-color: black;
+    background-color: yellow;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin:100px;
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+}
+
+.text{
+    text-align:center;
+}
