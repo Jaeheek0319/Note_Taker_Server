@@ -15,6 +15,8 @@ app.use(cors())
 app.use(express.json()); //configure request to accept json
 app.use(express.urlencoded({extended:true})) // configure request to accept arrays and string
 
+app.use(express.static(__dirname + '/public'));
+
 app.get("/", (req, res) => {
     console.log(__dirname);
     console.log(path.join(__dirname,'index.html'));
