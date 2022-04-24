@@ -6,7 +6,7 @@ const textArea = document.querySelector(".texts");
 const title = document.querySelector('.titles');
 
 const getNotes = () => {
-    fetch('http://localhost:3001/notes')
+    fetch('/notes')
         .then((res) => res.json())
         .then((data) => {
             console.log("data:", data);
@@ -46,7 +46,7 @@ addNote.addEventListener("click", (event) => {
         redirect: 'follow'
     };
 
-    fetch("http://localhost:3001/notes", requestOptions)
+    fetch("/notes", requestOptions)
         .then(response => response.text())
         .then(result => {
             console.log(result)
@@ -64,7 +64,7 @@ notes.addEventListener("click", (event) => {
 
         const id = event.target.getAttribute("data")
 
-        fetch(`http://localhost:3001/notes/${id}`, requestOptions)
+        fetch(`/notes/${id}`, requestOptions)
             .then(response => response.text())
             .then(result => {
                 console.log(result)
@@ -98,7 +98,7 @@ notes.addEventListener("click", (event) => {
         console.log("*********", id);
 
 
-        fetch(`http://localhost:3001/notes/${id}`, requestOptions)
+        fetch(`/notes/${id}`, requestOptions)
             .then(response => response.text())
             .then(result => {
                 console.log(result)
