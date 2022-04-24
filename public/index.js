@@ -13,14 +13,14 @@ const getNotes = () => {
             let notetemplate = ""
             for (let index = 0; index < data.length; index++) {
                 notetemplate += `
-            <div class="fullNote">
-            <div class="title"> <p> ${data[index].title} </p></div>
-            <div class="text"> <p> ${data[index].text} </p></div>
-                <!-- id = ${data[index].id} -->
-            <button  class="update" data=${data[index].id}> Update </button>
-            <button class="delete" data=${data[index].id}> Delete </button>
-            </div>
-            `
+                    <div class="fullNote">
+                    <div class="title"> <p> ${data[index].title} </p></div>
+                    <div class="text"> <p> ${data[index].text} </p></div>
+                        <!-- id = ${data[index].id} -->
+                    <button  class="update" data=${data[index].id}> Update </button>
+                    <button class="delete" data=${data[index].id}> Delete </button>
+                    </div>
+                `
             }
             notes.innerHTML = notetemplate
         });
